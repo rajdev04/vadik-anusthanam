@@ -1,0 +1,77 @@
+.mainheader{
+    font-size: 6vh;
+    margin-left: 45%;
+    font-family: gilroy;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.offer{
+    /* background-color: blue; */
+    /* color: white; */
+    border-bottom: 1px black solid;
+    display: flex;
+    overflow-x: auto;
+    border-top: 1px black solid;
+}
+.offer>.offers{
+    height: 50vh;
+    width: 100vw;
+    min-width: 100vw;
+    /* max-width: 100%; */
+    /* background-color: red; */
+    border-left: 1px black solid;
+    /* border-bottom: 3px black solid; */
+    /* float: left; */
+    font-family: samarkan;
+    font-size: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.offer>.offers>h3{
+    font-size: 7vh;
+}
+.offer::-webkit-scrollbar{  
+    /* display: none; */
+    height: 1vh;
+    width: 10vh;
+    background-color: white;
+    /* border: none; */
+}
+.offer::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+    cursor: grab !important;
+}
+.offer::-webkit-scrollbar-thumb{
+    background-color: rgba(34, 33, 33, 0.808);
+    border-radius: 5vh;
+    /* height: .1vh; */
+    width: 3vw;
+}
+.offer>h1{
+    font-family: samarkan;
+    font-size: 15vh;
+}
+@media only screen and (max-width: 600px){
+    .mainheader{
+        font-size: 5vh;
+        width: 70vw;
+        margin-left: 20%;
+        /* background-color: red; */
+    }
+    .offer{
+        overflow-y: hidden;
+    }
+    .offer>.offers{
+        height: 40vh;
+    }
+    .offer>.offers>h1{
+        font-size: 7vh;
+    }
+    
+    .offer>.offers>h3{
+        font-size: 6vh;
+        margin-top: 1vh;
+    }
+}

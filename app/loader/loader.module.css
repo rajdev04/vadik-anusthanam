@@ -1,0 +1,118 @@
+.loaderstart{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: springgreen; */
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: #ce1931;
+    /* color: #e0b00f; */
+    background-color: #ffd754;
+    /* background-color: #d12138; */
+}
+.l1{
+    position: absolute;
+    top: -8%;
+    left: 30%;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    /* background-color: rebeccapurple; */
+}
+.l1>img{
+    /* position: absolute; */
+    height: 40vh;
+    width: 40vh;
+    object-fit: cover;
+    transform: rotate(190deg);
+}
+.l2{
+    position: absolute;
+    top: -1%;
+    left: 75%;
+    border-radius: 50%;
+    height: 50vh;
+    width: 50vh;
+    /* background-color: royalblue; */
+}
+.l2>img{
+    /* position: absolute; */
+    height: 60vh;
+    width: 60vh;
+    object-fit: cover;
+    /* transform: rotate(190deg); */
+}
+.l3{
+    position: absolute;
+    bottom: -10%;
+    left: -2%;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    /* background-color: rosybrown; */
+}
+.l3>img{
+    /* position: absolute; */
+    height: 50vh;
+    width: 40vh;
+    object-fit: cover;
+    /* transform: rotate(190deg); */
+}
+.l4{
+    position: absolute;
+    bottom: -18%;
+    left: 58%;
+    height: 45vh;
+    width: 45vh;
+    border-radius: 50%;
+    /* background-color: teal; */
+}
+.l4>img{
+    /* position: absolute; */
+    height: 40vh;
+    width: 40vh;
+    object-fit: cover;
+    /* transform: rotate(190deg); */
+}
+.mainheader{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: gilroy;
+    font-size: 10vh;
+    text-align: center;
+    font-weight: 600;
+    /* -webkit-text-stroke-color: black; */
+    -webkit-text-stroke: 3px black; 
+}
+.secondaryheader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: gilroy;
+    font-size: 4vh;
+    width: 100vw;
+    max-width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    letter-spacing: 2px;
+    /* font-weight: 600; */
+}
+.secondaryheader>.secondaryheaderinner>span{
+    font-family: samarkan;
+    font-size: 10vh;
+    font-weight: 500;
+    /* color: white; */
+    -webkit-text-stroke: 2px black; 
+}
+.tagline{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: gilroy;
+    font-size: 3vh;
+    letter-spacing: 2px;
+}
