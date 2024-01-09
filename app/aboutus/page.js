@@ -1,15 +1,44 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import style from './aboutus.module.css'
 import Nav from '@/components/Nav'
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const page = () => {
+  const wraper = useRef(null)
+  const tl = useRef();
+
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      // ScrollTrigger.create({
+      //   target: '#main',
+      //   markers: true,
+      //   pin: true,
+      //   scrub: true,
+      //   start: '5%',
+      //   end: '+=3000'
+      // })
+      tl.current = gsap.timeline()
+      .to('#main',{scrollTrigger:{
+        target: '#mainin',
+        markers: true,
+        start: '5%',
+        end: '+=3000',
+        pin: true ,
+        scrub: true
+      }})
+    }, wraper)
+    return () => ctx.revert;
+  },[]);
+
   return (
     <>
-     
-      <div className={style.main}>
+     <div id='main' ref={wraper}>
+      <div  className={style.main}>
       <Nav></Nav>
-       <div className={style.maininner}>
+       <div id='mainin' className={style.maininner}>
        <div className={style.options}>
         <div className={style.option}>
           <h1>1</h1>
@@ -106,6 +135,7 @@ const page = () => {
           <h1></h1> <br/>
         </div>
        </div>
+      </div>
       </div>
     </>
   )

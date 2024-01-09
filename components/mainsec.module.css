@@ -2,31 +2,21 @@
     height: 110vh;
     width: 100vw;
     max-width: 100%;
-    /* background-color: rebeccapurple; */
+    /* background-color: green; */
     display: flex;
     /* overflow: hidden; */
 }
 .mainleft{
     height: 100vh;
     width: 50vw;
-    /* background-color: royalblue; */
     position: relative;
-    /* overflow: hidden; */
 }
-.mainright{
-    height: 100vh;
-    width: 50vw;
-    /* background-color: rosybrown; */
-    position: relative;
-    overflow: hidden;
-}
-.mainleft>h1{
+.mainleft>.mustneeded>h1{
     position: absolute;
     top: 50%;
     left: 52%;
     transform: translate(-50%,-50%);
-    font-size: 160vh;
-    display: inline-block;
+    font-size: 150vh;
     color: brown;
     /* font-weight: 400; */
 }
@@ -36,52 +26,60 @@
 .mainright:hover{
     cursor: crosshair; 
 }
-.mainleft>.mainleftinner{
+.mainleft>.mustneeded>.mainleftinner{
+    /* background-color: royalblue; */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     flex-direction: column;
-    position: absolute;
-    top: 32vh;
-    left: 8.5vw;
+    top: 33vh;
 }
-.mainleft>.mainleftinner>:nth-child(1){
+.mainleft>.mustneeded>.mainleftinner>:nth-child(1){
     font-size: 11vh;
     text-transform: uppercase;
+    opacity: 0;
 }
-.mainleft>.mainleftinner>:nth-child(2){
+.mainleft>.mustneeded>.mainleftinner>:nth-child(2){
     font-size: 6.5vh;
     text-transform: capitalize;
+    opacity: 0;
 }
-.mainleft>.mainleftinner>:nth-child(3){
-    font-size: 2.5vh
+.mainleft>.mustneeded>.mainleftinner>:nth-child(3){
+    font-size: 2.5vh;
+    opacity: 0;
 }
-.mainright>h1{
-    position: absolute;
-    top: 51.5%;
-    left: 59%;
-    transform: translate(-50%,-50%);
-    font-size: 100vh;
-    width: 64vw;
-    font-weight: 600;
-    /* color: transparent; */
-    -webkit-text-stroke: .4vh;
-    -webkit-text-stroke-color: white;
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    background-color: rgb(236, 236, 236);
-    mix-blend-mode: screen;
-}
-.mainright>h2{
-    display: none;
-}
-.mainright>.mainrightinner{
-    display: none;
+.mainright{
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    overflow: hidden;
 }
 .vid{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+.mainright>.innerright1{
+    height: 100vh;
+    width: 50vw;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+
+}
+.mainright>.innerright1>.random1>h1{
+    font-size: 50vw;
+    font-weight: 900;
+    margin-right: 29vh;
+    /* font-family: gilroy; */
 }
 @media only screen and (max-width: 600px) {
     .mainright{
